@@ -7,7 +7,6 @@ function Navbar() {
     const navigate = useNavigate();
     const navigate1=useNavigate()
 
-    // Vérification que cartItems est défini et est un tableau
    
 
     return (

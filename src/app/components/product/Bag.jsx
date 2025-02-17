@@ -78,7 +78,7 @@ function Bag() {
               <div
                 key={bag.id}
                 className="relative group border rounded-lg p-4 shadow-lg transition-transform transform hover:scale-105 cursor-pointer min-w-[300px] h-[550px]"
-                onClick={() => navigate(`/product/jacket/${bag.id}`)}
+                onClick={() => navigate(`/product/bag/${bag.id}`)}
               >
                 <div className="relative overflow-hidden rounded-lg ">
                   <img src={bag.image} className="w-full h-72 object-cover rounded-lg" alt={bag.name} />
