@@ -3,11 +3,10 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-function navbar() {
+function Navbar() {
     const navigate = useNavigate();
     const navigate1=useNavigate()
 
-    // Vérification que cartItems est défini et est un tableau
    
 
     return (
@@ -42,4 +41,4 @@ function navbar() {
     );
 }
 
-export default navbar;
+export default Navbar;
