@@ -1,4 +1,5 @@
 "use client";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./components/Home/Home";
 import Product from "./components/product/Product";
@@ -41,3 +42,4 @@ const App = () => {
 };
 
 export default App;
+
