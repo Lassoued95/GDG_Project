@@ -7,18 +7,25 @@ import Bag from "./components/product/Bag";
 import Hoodie from "./components/product/Hoodie";
 import Jacket from "./components/product/Jacket";
 import  Shoes  from "./components/product/Shoes";
+
 import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
 import Pantalon from  "./components/product/Pontalon";  
 import Cap from "./components/product/Cap";
 import Glasses from "./components/product/Glasses";
 import Short from "./components/product/Short";
+import Promo from "./Components/product/promo";
+import { CartProvider } from "./Context/cartContext";
+
 const App = () => {
     return (
         <>
             <Router>
-            <Navbar/>
-            
+
+            <CartProvider>
+
+                    <Navbar/>
+
                 <Routes>
                     <Route 
                         path="/" 
@@ -31,7 +38,8 @@ const App = () => {
                             </>
                         } 
                     />
-                   
+
+                    <Route path="/product/order-sammuray" element={<Promo />} />
                     <Route path="/product/bag" element={<Bag/>} />
                     <Route path="/product/hoodie" element={<Hoodie/>} />
                     <Route path="/product/jacket" element={<Jacket/>} />
@@ -45,7 +53,8 @@ const App = () => {
 
                  
                 </Routes>
-                
+                <Footer/>
+                </CartProvider>
             </Router>
 
            

@@ -10,7 +10,7 @@ function Navbar() {
    
 
     return (
-        <div className="w-full flex justify-between items-center mt-0 bg-black text-slate-50 py-4 px-8 cursor-pointer">
+        <div className="w-full flex justify-between items-center pt-100 bg-black text-slate-50 py-4 px-8 cursor-pointer ">
             <a onClick={() => navigate("/")}>  
 
             <h1 className="text-2xl  select-none">L&B Bazaar</h1>
