@@ -1,18 +1,45 @@
 "use client";
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Footer from "./Components/Footer/footer";
-import Navbar from "./Components/Navbar/navbar";
 
-export default function Home() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<h1>Accueil</h1>} />
-        <Route path="/about" element={<h1>À propos</h1>} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
-}
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/Home/Home";
+import Product from "./components/product/Product";
+import Bag from "./components/product/Bag";
+import Hoodie from "./components/product/Hoodie";
+import Jacket from "./components/product/Jacket";
+import  Shoes  from "./components/product/Shoes";
+
+const App = () => {
+    return (
+        <>
+            <Router>
+
+                <Routes>
+                    <Route 
+                        path="/" 
+                        element={
+                            <>
+                             <HomePage />
+                             <Product />
+                            </>
+                        } 
+                    />
+                    <Route path="/product/bag" element={<Bag/>} />
+                    <Route path="/product/hoodie" element={<Hoodie/>} />
+                    <Route path="/product/jacket" element={<Jacket/>} />
+                    <Route path="/product/shoes" element={<Shoes/>} />
+                 
+                </Routes>
+                
+            </Router>
+
+           
+
+   
+     
+            
+        </>
+    );
+};
+
+export default App;
+
