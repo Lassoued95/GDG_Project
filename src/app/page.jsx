@@ -7,7 +7,6 @@ import Bag from "./components/product/Bag";
 import Hoodie from "./components/product/Hoodie";
 import Jacket from "./components/product/Jacket";
 import  Shoes  from "./components/product/Shoes";
-
 import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
 import Pantalon from  "./Components/product/Pantalon";  
@@ -34,6 +33,7 @@ const App = () => {
                             <>
                              <HomePage />
                              <Product />
+
                           
                             </>
                         } 
