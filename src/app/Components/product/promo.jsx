@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "./store";
+import { useCart } from "../../context/cartContext";
 
 export const promoProducts = [
   {
@@ -9,7 +9,7 @@ export const promoProducts = [
     description: "Comfortable and stylish shoes for everyday wear.",
     originalPrice: "99.99",
     price: "89.99",
-    image: "/glasses3.jpg",
+    image: "/image-promo/glasses3.jpg",
   },
   {
     id: 74,
@@ -17,7 +17,7 @@ export const promoProducts = [
     description: "Perfect for your next outdoor trip.",
     originalPrice: "89.99",
     price: "79.99",
-    image: "/hoodie4.png",
+    image: "/image-promo/hoodie4.png",
   },
   {
     id: 75,
@@ -25,7 +25,7 @@ export const promoProducts = [
     description: "Timeless design, perfect for any occasion.",
     originalPrice: "159.99",
     price: "149.99",
-    image: "/shoes2.png",
+    image: "/image-promo/shoes2.png",
   },
 ];
 
