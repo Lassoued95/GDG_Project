@@ -1,6 +1,8 @@
 "use client";
 
+
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
 import HomePage from "./components/Home/Home";
 import Product from "./components/product/Product";
 import Bag from "./components/product/Bag";
@@ -14,7 +16,7 @@ import Cap from "./components/product/Cap";
 import Glasses from "./components/product/Glasses";
 import Short from "./components/product/Short";
 import Promo from "./Components/product/promo";
-import { CartProvider } from "./context/cartContext";
+import {CartProvider} from "./Context/cartContext";
 import Product_Details from "./Components/product/Product_Details.jsx";
 import CartPage from "./Components/product/CartPage";
 import ContactForm from "./Components/Contact/ContactForm";
@@ -63,9 +65,11 @@ const App = () => {
     return (
         <Router>
             <CartProvider>
+
                 <MainContent />
             </CartProvider>
         </Router>
+
     );
 };
 
