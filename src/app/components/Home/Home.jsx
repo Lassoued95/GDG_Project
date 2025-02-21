@@ -11,7 +11,7 @@ const HomePage = () => {
       <>
        <img 
             src="image-home/aa-removebg-preview.png"
-            className="ml-[55%] h-[55%] animate-sabat"
+            className="ml-[55%] h-[55%] animate-shoes_anim"
           />
 
     
