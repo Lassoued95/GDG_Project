@@ -9,7 +9,7 @@ import { productsP } from "./Pantalon";
 import { productsG } from "./Glasses";
 import { productsSh } from "./Short";
 import{promoProducts}from "./Promo";
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../Context/cartContext";
 
 const Product_Details = () => {
     const { id } = useParams(); // Get the product ID from the route parameters
