@@ -1,5 +1,4 @@
 "use client";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./components/Home/Home";
 import Product from "./components/product/Product";
@@ -14,7 +13,7 @@ import Cap from "./components/product/Cap";
 import Glasses from "./components/product/Glasses";
 import Short from "./components/product/Short";
 import Promo from "./Components/product/promo";
-import { CartProvider } from "./context/cartContext";
+import {CartProvider} from "./Context/cartContext";
 import Product_Details from "./Components/product/Product_Details.jsx";
 
 const App = () => {
@@ -48,17 +47,14 @@ const App = () => {
                     <Route  path="/product/cap" element={<Cap/>}/>
                     <Route  path="/product/glasses" element={<Glasses />}/>
                     <Route  path="/product/shorts" element={<Short/>}/>
-
                     <Route path="/product/bag/:id" element={<Product_Details />} />
                     <Route path="/product/shoes/:id" element={<Product_Details />} />
                     <Route path="/product/jacket/:id" element={<Product_Details />} />
                     <Route path="/product/hoodie/:id" element={<Product_Details />} />
-
                     <Route path="/product/cap/:id" element={<Product_Details  />} />
                     <Route path="/product/pants/:id" element={<Product_Details />} />
                     <Route path="/product/glasses/:id" element={<Product_Details />} />
                     <Route path="/product/short/:id" element={<Product_Details />} />
-
                     <Route path="/product/promo/:id" element={<Product_Details />} />
 
 
