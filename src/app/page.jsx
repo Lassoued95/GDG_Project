@@ -13,7 +13,7 @@ import Cap from "./components/product/Cap";
 import Glasses from "./components/product/Glasses";
 import Short from "./components/product/Short";
 import Promo from "./Components/product/promo";
-import {CartProvider} from "./Context/cartContext";
+import {CartProvider} from "./context/cartContext";
 import Product_Details from "./Components/product/Product_Details.jsx";
 import CartPage from "./Components/product/CartPage";
 import ContactForm from "./Components/Contact/ContactForm";
