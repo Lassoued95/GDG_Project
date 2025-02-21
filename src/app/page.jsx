@@ -1,8 +1,5 @@
 "use client";
-
-
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-
 import HomePage from "./components/Home/Home";
 import Product from "./components/product/Product";
 import Bag from "./components/product/Bag";
@@ -22,6 +19,7 @@ import CartPage from "./Components/product/CartPage";
 import ContactForm from "./Components/Contact/ContactForm";
 import Confirmation from "./Components/Confirmation/ConfirmationOrder";
 import Demand from "./Components/Demand/Demand";
+import ScrollToTop from "./components/product/Scrole";
 // Component to wrap Routes and apply conditional footer styles
 const MainContent = () => {
     const location = useLocation(); 
@@ -33,12 +31,12 @@ const MainContent = () => {
             <Routes>
                 <Route path="/" element={<><HomePage /><Product /></>} />
                 <Route path="/order-sammuray" element={<Promo />} />
-                <Route path="/product/bag" element={<Bag />} />
-                <Route path="/product/hoodie" element={<Hoodie />} />
-                <Route path="/product/jacket" element={<Jacket />} />
+                <Route path="/product/bags" element={<Bag />} />
+                <Route path="/product/hoodies" element={<Hoodie />} />
+                <Route path="/product/jackets" element={<Jacket />} />
                 <Route path="/product/shoes" element={<Shoes />} />
                 <Route path="/product/pants" element={<Pantalon />} />
-                <Route path="/product/cap" element={<Cap />} />
+                <Route path="/product/caps" element={<Cap />} />
                 <Route path="/product/glasses" element={<Glasses />} />
                 <Route path="/product/shorts" element={<Short />} />
                 <Route path="/product/bag/:id" element={<Product_Details />} />
@@ -65,7 +63,7 @@ const App = () => {
     return (
         <Router>
             <CartProvider>
-
+            <ScrollToTop/>
                 <MainContent />
             </CartProvider>
         </Router>

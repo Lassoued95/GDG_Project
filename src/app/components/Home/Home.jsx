@@ -17,7 +17,7 @@ const HomePage = () => {
     
 
           {/* Promo Section */}
-        <div className="bg-black text-center py-20 mt-[30%] h-[80vh] animate-zoomIn  overflow-x-hidden sm:mt-[-100%] md:mt-[-35%]" >
+        <div className="bg-black text-center py-20 mt-[20%] h-[80vh] animate-zoomIn  overflow-x-hidden sm:mt-[-100%] md:mt-[-37%]" >
 
 
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide uppercase mb-4 animate-font">

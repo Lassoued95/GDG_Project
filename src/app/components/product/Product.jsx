@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 
 export const products = [
   { id: 1, name: "shoes", image: "image-product-home/shoes_prod.png" },
-  { id: 2, name: "jacket", image: "image-product-home/jacket_prod.png" },
-  { id: 3, name: "hoodie", image: "image-product-home/hoodie_prod.png" },
-  { id: 4, name: "bag", image: "image-product-home/bag_prod.png" },
-  { id: 5, name: "cap", image: "image-product-home/cap1.png" },
+  { id: 2, name: "jackets", image: "image-product-home/jacket_prod.png" },
+  { id: 3, name: "hoodies", image: "image-product-home/hoodie_prod.png" },
+  { id: 4, name: "bags", image: "image-product-home/bag_prod.png" },
+  { id: 5, name: "caps", image: "image-product-home/cap1.png" },
   { id: 6, name: "pants", image: "image-product-home/pantalon.png" },
   { id: 7, name: "glasses", image: "image-product-home/glasses55.jpg" },
   { id: 8, name: "shorts", image: "image-product-home/short1.png" },

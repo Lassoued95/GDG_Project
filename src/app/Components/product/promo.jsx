@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../Context/cartContext";
 
 export const promoProducts = [
   {

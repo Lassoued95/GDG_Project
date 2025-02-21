@@ -4,12 +4,12 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
-  const [timeLeft, setTimeLeft] = useState(null); // Promo countdown state
+  const [timeLeft, setTimeLeft] = useState(null); 
 
-  // Promo end time
-  const PROMO_END_TIME = new Date("2025-06-01T23:59:59").getTime(); // Replace with your promo end time
+  // promo end time
+  const PROMO_END_TIME = new Date("2025-06-01T23:59:59").getTime(); //replace with your promo end time
 
-  // Function to calculate time left
+  // function to calculate time left
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
     const totalSeconds = Math.floor((PROMO_END_TIME - now) / 1000);
@@ -25,26 +25,26 @@ export const CartProvider = ({ children }) => {
       seconds: totalSeconds % 60,
     };
   };
-
-  // Effect to update the promo timer every second
+ 
   useEffect(() => {
     const timer = setInterval(() => {
       const updatedTimeLeft = calculateTimeLeft();
       setTimeLeft(updatedTimeLeft);
 
       if (!updatedTimeLeft) {
-        clearInterval(timer); // Stop timer when promo expires
+        clearInterval(timer); // stop timer when promo expires
       }
     }, 1000);
 
-    return () => clearInterval(timer); // Cleanup timer on unmount
+    return () => clearInterval(timer); // cleanup timer on unmount
+    
   }, []);
 
   // Add to cart functionality
   const addToCart = (product) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find((item) => item.id === product.id);
-
+ 
       if (existingItem) {
         return prevItems.map((item) =>
           item.id === product.id
